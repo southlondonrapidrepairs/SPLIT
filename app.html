@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ApproveHub Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/app.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <a class="brand" href="#/jobs">
+      <span class="brand-mark">🏗️</span>
+      <span class="brand-name">ApproveHub</span>
+    </a>
+
+    <div class="search">
+      <span class="search-icon">🔎</span>
+      <input id="searchInput" type="search" placeholder="Search jobs..." autocomplete="off" />
+    </div>
+
+    <div class="top-actions">
+      <button class="icon-btn" id="btnCompany" title="Company details">⚙️</button>
+      <button class="pill-btn" id="btnNewJob">+ New Job</button>
+    </div>
+  </header>
+
+  <main class="shell">
+    <div id="app"></div>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <div class="modal-head">
+        <div class="modal-title" id="modalTitle">Modal</div>
+        <button class="icon-btn" id="modalClose" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+      <div class="modal-foot" id="modalFoot"></div>
+    </div>
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
